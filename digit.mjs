@@ -7,13 +7,13 @@ class Digit {
     next() {
         if (this.position === ALPHABET.length - 1) {
             this.position = 0
-            this.notifyLeftBrother()
+            this.notifyOrCreateLeftBrother()
         } else {
             this.position++
         }
     }
 
-    notifyLeftBrother() {
+    notifyOrCreateLeftBrother() {
         if (this.leftBrother) this.leftBrother.next()
         else this.leftBrother = new Digit()
     }
@@ -22,15 +22,21 @@ class Digit {
         return ALPHABET[this.position]    
     }
 
-    print() {
+    /**
+     * Return all digit instances, from left to rigth
+     * @returns All brothers, from left to rigth
+     */
+    getAllBrothers() {
         let digit = this
-        let banner = ''
-        while (digit) {
-            banner = digit.current() + banner
-            digit = digit.leftBrother
-        }
-        return banner
+        const digits = [digit]
+        while (digit = digit.leftBrother) digits.push(digit)
+        return digits.reverse()
     }
+
+    printAllBrothers() {
+        return this.getAllBrothers().reduce((prev, digit) => prev + digit.current(), '')
+    }
+
 }
 
 export default Digit
