@@ -1,10 +1,11 @@
+import { ALPHABET } from './constants.mjs'
+
 class Digit {
-    alphabet = ['A', 'B', 'C']
     position = 0
     leftBrother = null
 
     next() {
-        if (this.position === this.alphabet.length - 1) {
+        if (this.position === ALPHABET.length - 1) {
             this.position = 0
             this.notifyLeftBrother()
         } else {
@@ -18,7 +19,7 @@ class Digit {
     }
 
     current() {
-        return this.alphabet[this.position]    
+        return ALPHABET[this.position]    
     }
 
     print() {
