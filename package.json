@@ -1,0 +1,25 @@
+{
+  "name": "alphabet-counter",
+  "version": "1.0.0",
+  "description": "This is like a regular counter, but with leters",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node digit.test.mjs",
+    "start": "node index.mjs 53"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiomagagnin/alphabet-counter.git"
+  },
+  "keywords": [
+    "alphabet",
+    "counter"
+  ],
+  "author": "Fabio Magagnin - fabio.email.123@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabiomagagnin/alphabet-counter/issues"
+  },
+  "homepage": "https://github.com/fabiomagagnin/alphabet-counter#readme"
+}
