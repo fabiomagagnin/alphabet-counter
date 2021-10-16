@@ -6,7 +6,6 @@ const incrementDigitBy = (digit, quantity) => {
 }
 
 /**
- * Returns the equivalent decimal
  * @param digitLength number of chars to be used
  * @returns the number of increments needed to achieve the max value whith the desired length
  */
