@@ -23,14 +23,10 @@ class Digit {
     }
 
     /**
-     * Return all digit instances, from left to rigth
-     * @returns All brothers, from left to rigth
+     * @returns All digit brothers, from left to rigth
      */
     getAllBrothers() {
-        let digit = this
-        const digits = [digit]
-        while (digit = digit.leftBrother) digits.push(digit)
-        return digits.reverse()
+        return this.leftBrother ? this.leftBrother.getAllBrothers().concat(this) : [this]
     }
 
     printAllBrothers() {
