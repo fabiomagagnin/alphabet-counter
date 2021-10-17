@@ -5,9 +5,13 @@ This was inspired on a real project situation where I needed to deal with excel 
 16 or greater
 
 ## To run
-`npm run start` (this will print 52 values, from A to BA)
-
-`node index.mjs 500` (this will print 500 values, where 500 can be any integer bigger then zero)
+`npm run count 53` (this will print 53 values, from A to BA. 53 can be any integer bigger then zero)
 
 ## To run the tests
 `npm run test`
+
+## What you'll see here
+- The logic to make the alphabet counter
+- Use of recursion `Digit.getAllBrothers()`
+- Use of ESM (ECMAScript Modules)
+- Use of Node native assert module to do some basic tests
