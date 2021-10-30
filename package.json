@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "node digit.test.mjs",
-    "count": "node index.mjs"
+    "count": "node index.mjs",
+    "count-async": "node index-async.mjs"
   },
   "repository": {
     "type": "git",

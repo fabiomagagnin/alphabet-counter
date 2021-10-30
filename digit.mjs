@@ -3,6 +3,7 @@ import { ALPHABET } from './constants.mjs'
 class Digit {
     position = 0
     leftBrother = null
+    index = 1
 
     next() {
         if (this.position === ALPHABET.length - 1) {
@@ -11,6 +12,7 @@ class Digit {
         } else {
             this.position++
         }
+        this.index++
     }
 
     notifyOrCreateLeftBrother() {
@@ -19,7 +21,11 @@ class Digit {
     }
 
     current() {
-        return ALPHABET[this.position]    
+        return ALPHABET[this.position]
+    }
+
+    currentIndex() {
+        return this.index
     }
 
     /**
