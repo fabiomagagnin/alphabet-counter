@@ -6,6 +6,7 @@ This was inspired on a real project situation where I needed to deal with excel 
 
 ## To run
 `npm run count 53` (this will print 53 values, from A to BA. 53 can be any integer bigger then zero)
+
 `npm run count-async 2000000` (this will show the name of the column 2 millions)
 
 ## To run the tests
